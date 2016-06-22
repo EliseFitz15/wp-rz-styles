@@ -24,18 +24,8 @@ $cta                = get_post_meta( $post->ID, '_raizlabs_front_page_cta', true
             <div class="atf-text">
                 <h3 class="we-create">We create</h3>
                 <h2 class="what-we-create">
-                    <span class="value-prop"
-                        data-text-1="Mobile Brands"
-                        data-text-2="Unique Experiences"
-                        data-text-3="Elegant Solutions"
-                        data-text-4="Inspired Products"
-                        data-text-5="Great Software"
-                    >
-                        <!-- Yup. -->
-                        <span>G</span><span>r</span><span>e</span><span>a</span><span>t</span><span> </span><span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span>
-                    </span>
+                    <span>Great Software</span>
                 </h2>
-                <div class="hr"></div>
             </div>
             <div class="atf-buttons">
                 <div class="button work">

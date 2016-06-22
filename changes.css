@@ -721,9 +721,9 @@ blockquote {
     border-left: 8px solid #ec594d
 }
 .atf {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    padding-top: 25vh;
+    padding: 15vh 0 10vh 0;
     position: relative;
     background:
     linear-gradient(
@@ -778,7 +778,7 @@ blockquote {
 .atf .atf-text .what-we-create:before,
 .atf .atf-text .what-we-create:after {
     display: none;
-    color: #ec594d;
+    color: white;
     margin: 0 20px 0 5px
 }
 @media (min-width: 520px) {
@@ -792,28 +792,6 @@ blockquote {
 }
 .atf .atf-text .what-we-create:after {
     content: '}'
-}
-.atf .atf-text .what-we-create .value-prop span.highlight {
-    background-color: rgba(236, 89, 77, 0.95);
-    color: white !important
-}
-.atf .atf-text .hr {
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    height: 2px;
-    margin-bottom: 40px;
-    display: none
-}
-@media (min-width: 600px) {
-    .atf .atf-text .hr {
-        width: 600px
-    }
-}
-@media (min-width: 680px) {
-    .atf .atf-text .hr {
-        display: block
-    }
 }
 .atf .atf-buttons {
     margin: 40px auto 70px auto;
@@ -858,7 +836,7 @@ blockquote {
 }
 .atf .atf-downarrow {
     position: absolute;
-    bottom: 10vh;
+    bottom: 6vh;
     right: calc(50% - 50px / 2);
     width: 50px;
     height: 50px;
