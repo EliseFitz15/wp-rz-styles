@@ -1,0 +1,41 @@
+body {
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+
+div {
+  height: 300px;
+  margin: 10px -1%;
+}
+
+.content-left-40 {
+  float: left;
+  width: 41%;
+  clear: left;
+
+  background-color: purple;
+}
+
+.content-right-60 {
+  float: right;
+  width: 61%;
+  clear: right;
+  background-color: blue;
+}
+
+.content-right-40 {
+  float: right;
+  width: 41%;
+  clear: right;
+
+  background-color: purple;
+}
+
+.content-left-60 {
+  float: left;
+  width: 61%;
+  clear: left;
+  background-color: blue;
+}
