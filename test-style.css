@@ -1,41 +1,138 @@
-body {
+/*Styles complete for medium size, greater than 480px*/
+@media screen and (min-width: 480px) {
+#portfolio-items {
+  width: 100vw;
+}
+
+.portfolio-item-container {
+    display: inline-block;
+}
+
+.container {
+  position: relative;
+}
+
+/*Everything 3rd container starting witht he first*/
+.portfolio-item-container:nth-of-type(3n + 1) {
+  margin: -1% 0 0 -1%;
+  float: left;
+}
+
+/*Every 3rd container starting with the second*/
+.portfolio-item-container:nth-of-type(3n + 2) {
+  margin: -1% -1% 0 0;
+  float: right;
+}
+
+/*Every 3rd container starting with the third*/
+.portfolio-item-container:nth-of-type(3n + 3) {
+  margin: 2% 0 3% -1%;
+}
+
+.case-study-text {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: sans-serif;
+  line-height: 1.35;
+}
+
+.case-study-text a {
+  color: black;
+  text-decoration: none;
+}
+
+/*Odd portfolio items have hight colors*/
+.portfolio-item-container:nth-of-type(odd) .container .case-study-text span {
+  color: indianred;
+}
+
+.portfolio-item-container:nth-of-type(odd) .container .case-study-text .button {
+  color: indianred;
+  border: solid 1px indianred;
+}
+
+/*Even ones use all white text*/
+.portfolio-item-container:nth-of-type(even) .container .case-study-text,
+.portfolio-item-container:nth-of-type(even) .container .case-study-text a {
   color: white;
 }
-h1 {
-  text-align: center;
+
+.portfolio-item-container:nth-of-type(even) .container .case-study-text .button {
+  color: white;
+  border: solid 1px white;
 }
 
-div {
-  height: 300px;
-  margin: 10px -1%;
+.portfolio-item-container:nth-of-type(3n + 3) .container .case-study-text {
+  width: 31%;
+  left: 5%;
 }
 
-.content-left-40 {
-  float: left;
-  width: 41%;
-  clear: left;
-
-  background-color: purple;
+.portfolio-item-container:nth-of-type(3n + 6) .container .case-study-text {
+  margin-left: 60%;
 }
 
-.content-right-60 {
-  float: right;
-  width: 61%;
-  clear: right;
-  background-color: blue;
+.width-60 {
+  width: 60vw;
 }
 
-.content-right-40 {
-  float: right;
-  width: 41%;
-  clear: right;
-
-  background-color: purple;
+.width-40 {
+  width: 40vw;
 }
 
-.content-left-60 {
-  float: left;
-  width: 61%;
-  clear: left;
-  background-color: blue;
+.width-100 {
+  width: 101vw;
+}
+
+.button {
+  border: solid 2px white;
+  padding: 2% 5%;
+  text-decoration: none;
+  font: 75%;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+}
+
+/*Larger that 13" laptop screen*/
+@media screen and (min-width: 1380px) {
+  #portfolio-items {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .width-60, .width-40 {
+    width: 100%;
+  }
+
+  .width-100 {
+    width: 101%;
+  }
+
+  .portfolio-item-container:nth-of-type(1),
+  .portfolio-item-container:nth-of-type(5) {
+    width: 60%;
+  }
+
+  .portfolio-item-container:nth-of-type(2),
+  .portfolio-item-container:nth-of-type(4) {
+    width: 40%;
+  }
+
+  .portfolio-item-container:nth-of-type(5) {
+    width: 60%;
+    margin-right: 2px;
+  }
+
+  .portfolio-item-container:nth-of-type(2) img {
+    margin-left: -3%;
+  }
+
+  .portfolio-item-container:nth-of-type(3n + 3) {
+    margin: 1% 0 2% -1%;
+    width: 100%
+  }
 }
