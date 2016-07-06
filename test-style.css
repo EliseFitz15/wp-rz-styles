@@ -1,99 +1,250 @@
+/*Styles for small screens, less than 480px*/
+@media screen and (max-width: 480px) {
+  #portfolio-items {
+    width: 100vw;
+  }
+  .width-60, .width-40, .width-100 {
+    display: none;
+  }
+
+  .mobile-img {
+    width: 100vw;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .unique-apps {
+    width: 80%;
+    position: absolute;
+    margin-top: 8%;
+    left: 10%;
+    font-family: sans-serif;
+    line-height: 1.60;
+  }
+
+  .unique-apps h3 {
+    margin: 20px 0 0 0;
+    font-style: italic;
+    font-size: 25px;
+  }
+
+  .case-study-text {
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    margin-top: 85%;
+    left: 10%;
+    font-family: sans-serif;
+    line-height: 1.35;
+  }
+
+  .case-study-text h2 {
+    font-size: 35px;
+    margin: 10px 0 -8px 0;
+  }
+
+  .button {
+    padding: 5% 12%;
+    text-decoration: none;
+    font: 75%;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .portfolio-item-container:nth-of-type(odd) .container .case-study-text,
+  .portfolio-item-container:nth-of-type(odd) .container .case-study-text a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .portfolio-item-container:nth-of-type(odd) .container .case-study-text span {
+    color: indianred;
+  }
+
+  .portfolio-item-container:nth-of-type(odd) .container .case-study-text .button {
+    color: indianred;
+    border: solid 2px indianred;
+  }
+
+  .portfolio-item-container:nth-of-type(even) .container .case-study-text,
+  .portfolio-item-container:nth-of-type(even) .container .case-study-text a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .portfolio-item-container:nth-of-type(even) .container .case-study-text .button {
+    color: white;
+    border: solid 2px white;
+  }
+
+  .portfolio-item-container:last-of-type {
+    color: white;
+    margin: 0;
+    padding: 50px 0 50px 0;
+    width: 101%;
+    background-color: #ff6254;
+  }
+
+  .unique-apps, .contact {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .unique-apps h1, .contact h1 {
+    font-style: italic;
+  }
+
+  .contact {
+    padding: 0 40px 0 40px;
+  }
+
+  .contact a {
+    border: solid 2px white;
+    color: white;
+    padding: 20px 80px 20px 80px;
+  }
+
+}
+
 /*Styles complete for medium size, greater than 480px*/
 @media screen and (min-width: 480px) {
-#portfolio-items {
-  width: 100vw;
-}
+  #portfolio-items {
+    width: 100vw;
+  }
 
-.portfolio-item-container {
+  .mobile-img {
+    display: none;
+  }
+
+  .portfolio-item-container {
+      display: inline-block;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  /*Everything 3rd container starting witht he first*/
+  .portfolio-item-container:nth-of-type(3n + 1) {
+    margin: -1% 0 0 -1%;
+    float: left;
+  }
+
+  /*Every 3rd container starting with the second*/
+  .portfolio-item-container:nth-of-type(3n + 2) {
+    margin: -1% -1% 0 0;
+    float: right;
+  }
+
+  /*Every 3rd container starting with the third*/
+  .portfolio-item-container:nth-of-type(3n + 3) {
+    margin: 2% 0 3% -1%;
+  }
+
+  .case-study-text {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-family: sans-serif;
+    line-height: 1.35;
+  }
+
+  .case-study-text a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /*Odd portfolio items have hight colors*/
+  .portfolio-item-container:nth-of-type(odd) .container .case-study-text span {
+    color: indianred;
+  }
+
+  .portfolio-item-container:nth-of-type(odd) .container .case-study-text .button {
+    color: indianred;
+    border: solid 1px indianred;
+  }
+
+  /*Even ones use all white text*/
+  .portfolio-item-container:nth-of-type(even) .container .case-study-text,
+  .portfolio-item-container:nth-of-type(even) .container .case-study-text a {
+    color: white;
+  }
+
+  .portfolio-item-container:nth-of-type(even) .container .case-study-text .button {
+    color: white;
+    border: solid 1px white;
+  }
+
+  .portfolio-item-container:nth-of-type(3n + 3) .container .case-study-text {
+    width: 31%;
+    left: 5%;
+  }
+
+  .portfolio-item-container:nth-of-type(3n + 6) .container .case-study-text {
+    margin-left: 60%;
+  }
+
+  .width-60 {
+    width: 60vw;
+  }
+
+  .width-40 {
+    width: 40vw;
+  }
+
+  .width-100 {
+    width: 101vw;
+  }
+
+  .button {
+    border: solid 2px white;
+    padding: 2% 5%;
+    text-decoration: none;
+    font: 75%;
+    font-weight: bold;
+    margin-top: 20px;
     display: inline-block;
-}
+  }
 
-.container {
-  position: relative;
-}
+  .unique-apps {
+    width: 80%;
+    position: absolute;
+    margin-top: 8%;
+    left: 10%;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.60;
+  }
 
-/*Everything 3rd container starting witht he first*/
-.portfolio-item-container:nth-of-type(3n + 1) {
-  margin: -1% 0 0 -1%;
-  float: left;
-}
+  .portfolio-item-container:nth-last-of-type(2) {
+    margin: -3% 0 0 -1%;
+    width: 100%;
+  }
 
-/*Every 3rd container starting with the second*/
-.portfolio-item-container:nth-of-type(3n + 2) {
-  margin: -1% -1% 0 0;
-  float: right;
-}
+  .portfolio-item-container:last-of-type {
+    color: white;
+    margin: 0;
+    padding: 160px 0 120px 0;
+    width: 101%;
+    background-color: #ff6254;
+    text-align: center;
+  }
 
-/*Every 3rd container starting with the third*/
-.portfolio-item-container:nth-of-type(3n + 3) {
-  margin: 2% 0 3% -1%;
-}
+  .unique-apps, .contact {
+    font-family: sans-serif;
+  }
 
-.case-study-text {
-  width: 50%;
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  font-family: sans-serif;
-  line-height: 1.35;
-}
+  .unique-apps h1, .contact h1 {
+    font-style: italic;
+  }
 
-.case-study-text a {
-  color: black;
-  text-decoration: none;
-}
-
-/*Odd portfolio items have hight colors*/
-.portfolio-item-container:nth-of-type(odd) .container .case-study-text span {
-  color: indianred;
-}
-
-.portfolio-item-container:nth-of-type(odd) .container .case-study-text .button {
-  color: indianred;
-  border: solid 1px indianred;
-}
-
-/*Even ones use all white text*/
-.portfolio-item-container:nth-of-type(even) .container .case-study-text,
-.portfolio-item-container:nth-of-type(even) .container .case-study-text a {
-  color: white;
-}
-
-.portfolio-item-container:nth-of-type(even) .container .case-study-text .button {
-  color: white;
-  border: solid 1px white;
-}
-
-.portfolio-item-container:nth-of-type(3n + 3) .container .case-study-text {
-  width: 31%;
-  left: 5%;
-}
-
-.portfolio-item-container:nth-of-type(3n + 6) .container .case-study-text {
-  margin-left: 60%;
-}
-
-.width-60 {
-  width: 60vw;
-}
-
-.width-40 {
-  width: 40vw;
-}
-
-.width-100 {
-  width: 101vw;
-}
-
-.button {
-  border: solid 2px white;
-  padding: 2% 5%;
-  text-decoration: none;
-  font: 75%;
-  font-weight: bold;
-  margin-top: 20px;
-  display: inline-block;
-}
+  .contact a {
+    color: white;
+    padding: 20px 100px 20px 100px;
+  }
 
 }
 
@@ -104,6 +255,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .mobile-img {
+    display: none;
+  }
+
   .width-60, .width-40 {
     width: 100%;
   }
@@ -134,5 +290,31 @@
   .portfolio-item-container:nth-of-type(3n + 3) {
     margin: 1% 0 2% -1%;
     width: 100%
+  }
+
+  .portfolio-item-container:nth-last-of-type(2) {
+    margin: -2% 0 0 -1%;
+    width: 100%;
+  }
+
+  .portfolio-item-container:last-of-type {
+    margin: 0;
+    color: white;
+    padding: 160px 0 120px 0;
+    width: 101%;
+    background-color: #ff6254;
+    text-align: center;
+  }
+
+  .unique-apps, .contact {
+    font-family: sans-serif;
+  }
+  .unique-apps h1, .contact h1 {
+    font-style: italic;
+  }
+
+  .contact a {
+    color: white;
+    padding: 20px 100px 20px 100px;
   }
 }
