@@ -46,7 +46,7 @@ body {
     width: 100vw;
   }
 
-  .container {
+  .portfolio-item {
     position: relative;
   }
 
@@ -88,28 +88,28 @@ body {
     display: inline-block;
   }
 
-  .portfolio-item-container:nth-of-type(odd) .container .case-study-text,
-  .portfolio-item-container:nth-of-type(odd) .container .case-study-text a {
+  .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text,
+  .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text a {
     color: black;
     text-decoration: none;
   }
 
-  .portfolio-item-container:nth-of-type(odd) .container .case-study-text span {
+  .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text span {
     color: indianred;
   }
 
-  .portfolio-item-container:nth-of-type(odd) .container .case-study-text .button {
+  .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text .button {
     color: indianred;
     border: solid 2px indianred;
   }
 
-  .portfolio-item-container:nth-of-type(even) .container .case-study-text,
-  .portfolio-item-container:nth-of-type(even) .container .case-study-text a {
+  .portfolio-item-container:nth-of-type(even) .portfolio-item .case-study-text,
+  .portfolio-item-container:nth-of-type(even) .portfolio-item .case-study-text a {
     color: white;
     text-decoration: none;
   }
 
-  .portfolio-item-container:nth-of-type(even) .container .case-study-text .button {
+  .portfolio-item-container:nth-of-type(even) .portfolio-item .case-study-text .button {
     color: white;
     border: solid 2px white;
   }
@@ -241,7 +241,7 @@ body {
       display: inline-block;
   }
 
-  .container {
+  .portfolio-item {
     position: relative;
   }
 
@@ -277,32 +277,32 @@ body {
   }
 
   /*Odd portfolio items have hight colors*/
-  .portfolio-item-container:nth-of-type(odd) .container .case-study-text span {
+  .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text span {
     color: indianred;
   }
 
-  .portfolio-item-container:nth-of-type(odd) .container .case-study-text .button {
+  .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text .button {
     color: indianred;
     border: solid 1px indianred;
   }
 
   /*Even ones use all white text*/
-  .portfolio-item-container:nth-of-type(even) .container .case-study-text,
-  .portfolio-item-container:nth-of-type(even) .container .case-study-text a {
+  .portfolio-item-container:nth-of-type(even) .portfolio-item .case-study-text,
+  .portfolio-item-container:nth-of-type(even) .portfolio-item .case-study-text a {
     color: white;
   }
 
-  .portfolio-item-container:nth-of-type(even) .container .case-study-text .button {
+  .portfolio-item-container:nth-of-type(even) .portfolio-item .case-study-text .button {
     color: white;
     border: solid 1px white;
   }
 
-  .portfolio-item-container:nth-of-type(3n + 3) .container .case-study-text {
+  .portfolio-item-container:nth-of-type(3n + 3) .portfolio-item .case-study-text {
     width: 31%;
     left: 5%;
   }
 
-  .portfolio-item-container:nth-of-type(3n + 6) .container .case-study-text {
+  .portfolio-item-container:nth-of-type(3n + 6) .portfolio-item .case-study-text {
     margin-left: 60%;
   }
 
