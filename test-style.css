@@ -1,5 +1,9 @@
+body {
+  margin: 0px;
+}
 /*Styles for small screens, less than 650px*/
 @media screen and (max-width: 650px) {
+
   #portfolio-items {
     width: 100vw;
   }
@@ -16,7 +20,7 @@
     background-repeat: no-repeat;
     width: 101%;
     height: 60%;
-    margin: 1% 0 3% -1%;
+    margin: 0% 0 3% -1%;
   }
 
   .jumbo-container .jumbo-text {
@@ -143,6 +147,58 @@
 
 /*Styles complete for medium size, greater than 650px*/
 @media screen and (min-width: 650px) {
+  .navigation {
+  width: 100%;
+  position: fixed;
+  height: 55px;
+  z-index: 2;
+  transition: background-color 0.5s ease;
+}
+
+.navigation #heading {
+  text-decoration: none;
+  display: inline-block;
+  font: 22px 'Pacifico';
+  color: #555;
+  position: absolute;
+  left: 10%;
+  padding: 15px;
+}
+.nav-menu ul {
+  list-style-type: none;
+}
+.nav-menu ul li {
+  display: inline;
+  padding: 15px;
+}
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.navigation #heading:hover {
+  color: black;
+}
+.nav-menu ul li a:hover {
+  color: #ec594d;
+}
+
+.nav-menu {
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    bottom: 25vh;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
   #portfolio-items {
     width: 100vw;
   }
@@ -159,7 +215,7 @@
     background-repeat: no-repeat;
     width: 101%;
     height: 60%;
-    margin: 1% 0 3% -1%;
+    margin: 0% 0 3% -1%;
   }
 
   .jumbo-container .jumbo-text {
@@ -315,6 +371,59 @@
 
 /*Larger that 13" laptop screen*/
 @media screen and (min-width: 1380px) {
+  .navigation {
+    width: 1298px;
+    position: fixed;
+    height: 55px;
+    z-index: 2;
+    transition: background-color 0.5s ease;
+    margin-left: 203px;
+  }
+
+  .navigation #heading {
+    text-decoration: none;
+    display: inline-block;
+    font: 22px 'Pacifico';
+    color: #555;
+    position: absolute;
+    left: 10%;
+    padding: 15px;
+  }
+  .nav-menu ul {
+    list-style-type: none;
+  }
+  .nav-menu ul li {
+    display: inline;
+    padding: 15px;
+  }
+  .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .navigation #heading:hover {
+    color: black;
+  }
+  .nav-menu ul li a:hover {
+    color: #ec594d;
+  }
+
+  .nav-menu {
+    position: absolute;
+    right: 100px;
+    top: 0;
+  }
+
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      bottom: 25vh;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+
   #portfolio-items {
     width: 75%;
     margin-left: auto;
