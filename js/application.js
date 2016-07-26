@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   $( window ).scroll(function() {
 
-    if ($(this).scrollTop() > 650 ) {
+    if ($(this).scrollTop() > 300 ) {
       $('.navigation').css({
         "background": "#333"
       });

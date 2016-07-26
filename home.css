@@ -1,0 +1,321 @@
+h2 {
+  font-family: serif;
+  color: #333333;
+  font-style: italic;
+  font-size: 32px;
+}
+h3, p, a {
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-family: sans-serif;
+    display: table;
+  }
+  .homepage-wrapper {
+    width: 103%;
+  }
+  .who-we-are, .we-ship, .contact-cta, .what-we-are-doing {
+    line-height: 1.5;
+    color: #6b6b6b;
+    font-size: 14px;
+    text-align: center;
+  }
+  .jumbo-container .jumbo-text {
+    width: 103%;
+  }
+  .jumbo-container .jumbo-text .button {
+    padding: 4%;
+    display: block;
+    width: 100%;
+    background-color: tomato;
+    color: white;
+  }
+
+  .grid-container {
+    margin-bottom:50px;
+    text-align: center;
+  }
+
+  .process-item {
+    width: 100%;
+    display: inline-block;
+    margin: 50px 0;
+  }
+
+  .process-graphic {
+    width: 100px;
+  }
+
+  .process-item p {
+    color: #6b6b6b;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+
+  .process-item a {
+    color: #ec594d;
+    text-decoration: none;
+  }
+
+  .full-width-row {
+    position: relative;
+    width: 100%;
+  }
+
+  .home-case-study-text {
+    position: absolute;
+    right: 0;
+    color: white;
+    width: 40%;
+    top: 20%;
+  }
+  .client-title {
+    margin-top: 50px;
+  }
+  .home-case-study-text a {
+    color: white;
+  }
+
+  .width-50 {
+    width: 50%;
+    margin-top: 15px;
+    height: 300px;
+  }
+
+  .width-50:first-child {
+    background-color: lightblue;
+    float: left;
+    margin-left: -1.5px;
+  }
+
+  .width-50:last-child {
+    background-color: pink;
+    float: right;
+    margin-right: -13.5px;
+  }
+
+  .blog-text, .clients-text {
+    margin: 25px;
+  }
+
+  .logo-grid img {
+    width: 80px;
+    padding: 2%;
+  }
+
+  .logo-grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stat-grid {
+    margin: 25px 0;
+  }
+
+  .stat-item {
+    width: 75%;
+    display: inline-block;
+    margin: 25px 0;
+  }
+
+  .stat-item span {
+    font-size: 250%;
+    display: block;
+    color: tomato;
+    line-height: 1;
+    font-weight: 900;
+  }
+
+  .stat-item p {
+    font-size: 18px;
+  }
+
+  .contact-cta {
+    background-color: tomato;
+    padding: 3% 4% 20% 4%;
+  }
+
+  .contact-cta h2, .contact-cta p, .contact-cta  a {
+    color: white;
+  }
+
+  .contact-cta  a {
+    padding: 1% 3%;
+    margin: 1%;
+    font-size: 16px;
+    border: 1px solid white;
+  }
+}
+@media screen and (min-width: 650px) {
+  .homepage-wrapper {
+    width: 100%;
+  }
+
+  .jumbo-container .jumbo-text h1 {
+    margin-top: 25px;
+    font-family: serif;
+  }
+
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-family: sans-serif;
+    display: table;
+  }
+
+  .jumbo-container .jumbo-text a {
+    color: white;
+  }
+
+  .jumbo-container .jumbo-text .button {
+    width: 140px;
+    padding: 1% 3%;
+    margin: 1%;
+  }
+
+  .who-we-are, .we-ship, .contact-cta, .what-we-are-doing {
+    line-height: 1.5;
+    color: #6b6b6b;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .grid-container {
+    margin-top: 50px;
+    margin-bottom:50px;
+    text-align: center;
+  }
+
+  .process-item {
+    width: 28%;
+    display: inline-block;
+    margin: 15px;
+  }
+
+  .process-graphic {
+    width: 100px;
+  }
+
+  .process-item p {
+    color: #6b6b6b;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+
+  .process-item a {
+    color: #ec594d;
+    text-decoration: none;
+  }
+
+  .full-width-row {
+    position: relative;
+    width: 100%;
+  }
+
+  .home-case-study-text {
+    position: absolute;
+    right: 0;
+    color: white;
+    width: 40%;
+    top: 20%;
+  }
+  .home-case-study-text img {
+
+  }
+  .home-case-study-text a {
+    color: white;
+  }
+
+  .width-50 {
+    width: 50%;
+    margin-top: 15px;
+    height: 300px;
+  }
+
+  .width-50:first-child {
+    background-color: lightblue;
+    float: left;
+    margin-left: -1.5px;
+  }
+
+  .width-50:last-child {
+    background-color: pink;
+    float: right;
+    margin-right: -13.5px;
+  }
+
+  .blog-text, .clients-text {
+    margin: 25px;
+  }
+
+  .logo-grid img {
+    width: 80px;
+    padding: 2%;
+  }
+
+  .logo-grid {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stat-grid {
+    margin: 75px 0;
+  }
+
+  .stat-item {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .stat-item:nth-child(2){
+    border-right: 2px solid #6b6b6b;
+    border-left: 2px solid #6b6b6b;
+    height: 130px;
+  }
+
+  .stat-item span {
+    font-size: 350%;
+    display: block;
+    color: tomato;
+    line-height: 1;
+    font-weight: 900;
+  }
+
+  .stat-item p {
+    font-size: 18px;
+  }
+
+  .contact-cta {
+    background-color: tomato;
+    padding: 3%;
+  }
+
+  .contact-cta h2, .contact-cta p, .contact-cta  a {
+    color: white;
+  }
+
+  .contact-cta  a {
+    padding: 1% 3%;
+    margin: 1%;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .homepage-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

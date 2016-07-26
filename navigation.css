@@ -1,0 +1,55 @@
+body {
+  height: 150%;
+}
+
+.navigation {
+width: 100%;
+position: fixed;
+height: 55px;
+z-index: 2;
+transition: background-color 0.5s ease;
+}
+
+.navigation #heading {
+text-decoration: none;
+display: inline-block;
+font: 22px 'Pacifico';
+color: #555;
+position: absolute;
+left: 10%;
+padding: 15px;
+}
+.nav-menu ul {
+list-style-type: none;
+}
+.nav-menu ul li {
+display: inline;
+padding: 15px;
+}
+.nav-menu ul li a {
+color: white;
+text-decoration: none;
+}
+.navigation #heading:hover {
+color: black;
+}
+.nav-menu ul li a:hover {
+color: #ec594d;
+}
+
+.nav-menu {
+position: absolute;
+right: 100px;
+top: 0;
+}
+
+@keyframes fadeInTop {
+0% {
+  opacity: 0;
+  bottom: 25vh;
+}
+100% {
+  opacity: 1;
+  bottom: 0;
+}
+}

@@ -19,7 +19,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 101%;
-    height: 60%;
+    height: 80%;
     margin: 0% 0 3% -1%;
   }
 
@@ -86,6 +86,7 @@ body {
     font: 75%;
     margin-top: 20px;
     display: inline-block;
+    width: 240px;
   }
 
   .portfolio-item-container:nth-of-type(odd) .portfolio-item .case-study-text,
@@ -147,58 +148,6 @@ body {
 
 /*Styles complete for medium size, greater than 650px*/
 @media screen and (min-width: 650px) {
-  .navigation {
-  width: 100%;
-  position: fixed;
-  height: 55px;
-  z-index: 2;
-  transition: background-color 0.5s ease;
-}
-
-.navigation #heading {
-  text-decoration: none;
-  display: inline-block;
-  font: 22px 'Pacifico';
-  color: #555;
-  position: absolute;
-  left: 10%;
-  padding: 15px;
-}
-.nav-menu ul {
-  list-style-type: none;
-}
-.nav-menu ul li {
-  display: inline;
-  padding: 15px;
-}
-.nav-menu ul li a {
-  color: white;
-  text-decoration: none;
-}
-.navigation #heading:hover {
-  color: black;
-}
-.nav-menu ul li a:hover {
-  color: #ec594d;
-}
-
-.nav-menu {
-  position: absolute;
-  right: 100px;
-  top: 0;
-}
-
-@keyframes fadeInTop {
-  0% {
-    opacity: 0;
-    bottom: 25vh;
-  }
-  100% {
-    opacity: 1;
-    bottom: 0;
-  }
-}
-
   #portfolio-items {
     width: 100vw;
   }
@@ -214,7 +163,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 101%;
-    height: 60%;
+    height: 80%;
     margin: 0% 0 3% -1%;
   }
 
@@ -371,59 +320,6 @@ body {
 
 /*Larger that 13" laptop screen*/
 @media screen and (min-width: 1380px) {
-  .navigation {
-    width: 1298px;
-    position: fixed;
-    height: 55px;
-    z-index: 2;
-    transition: background-color 0.5s ease;
-    margin-left: 203px;
-  }
-
-  .navigation #heading {
-    text-decoration: none;
-    display: inline-block;
-    font: 22px 'Pacifico';
-    color: #555;
-    position: absolute;
-    left: 10%;
-    padding: 15px;
-  }
-  .nav-menu ul {
-    list-style-type: none;
-  }
-  .nav-menu ul li {
-    display: inline;
-    padding: 15px;
-  }
-  .nav-menu ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  .navigation #heading:hover {
-    color: black;
-  }
-  .nav-menu ul li a:hover {
-    color: #ec594d;
-  }
-
-  .nav-menu {
-    position: absolute;
-    right: 100px;
-    top: 0;
-  }
-
-  @keyframes fadeInTop {
-    0% {
-      opacity: 0;
-      bottom: 25vh;
-    }
-    100% {
-      opacity: 1;
-      bottom: 0;
-    }
-  }
-
   #portfolio-items {
     width: 75%;
     margin-left: auto;
